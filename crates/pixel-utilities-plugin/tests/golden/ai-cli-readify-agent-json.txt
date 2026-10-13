@@ -1,0 +1,4 @@
+exit: 0
+--- stdout
+{"agents":[{"agent":"codex","blocker":"no provider answered","detail":"the provider failed or had no key in the environment","provider":null,"ready":false},{"agent":"devin","blocker":null,"detail":"could not start devin: No such file or directory (os error 2)","provider":null,"ready":false}],"applied":[],"approvals":null,"auth_chain":null,"epistemics":{"basis":"live probe of one provider endpoint and the four agent CLIs; non-deterministic, one observation of the machine's current state","closed_world":false,"confidence":"unready","lower_bound":true},"pending":[],"providers":[{"detail":"","failure":"no key","provider":"ollama","ready":false}],"refused":[],"selected":null,"snapshot":{"agents":["codex","devin"],"deterministic":false,"providers":["ollama"]},"verified_only":["devin: EXTRA/.config/devin/config.json verified, never rewritten"]}
+--- stderr

@@ -1,0 +1,24 @@
+# SPDX-FileCopyrightText: The Pixel contributors
+# SPDX-License-Identifier: MIT
+
+name = "utilities"
+version = "0.1.0"
+api = 1
+description = "Small utilities of Pixel: web lookup for plan refinement, the release consistency check and the agent-CLI readiness probe."
+run = "bin/pixel-utilities"
+capabilities = ["command"]
+# web-search fetches from the configured search provider (or DuckDuckGo and
+# Wikipedia) and ai-cli-readify sends one probe request to the model provider.
+network = true
+
+# Not read by plugin API 1 (the host ignores keys it does not know): the
+# commands this plugin answers to. API 1 resolves `pixel <name>` to a plugin
+# *named* <name>, so today `pixel web-search` finds this plugin only through
+# the `pixel-<command>` links of `pixel-utilities install-links`; a host that
+# reads this list would route every name below to `pixel-utilities <name>` by
+# itself. tests/manifest.rs keeps the list equal to the commands the binary has.
+commands = [
+  "web-search",
+  "check-release",
+  "ai-cli-readify",
+]

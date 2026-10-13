@@ -1,0 +1,5 @@
+exit: 2
+--- stdout
+--- stderr
+error: invalid value 'abc' for '--limit <LIMIT>': invalid digit found in string
+For more information, try '--help'.

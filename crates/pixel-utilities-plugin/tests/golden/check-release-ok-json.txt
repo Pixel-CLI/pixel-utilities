@@ -1,0 +1,4 @@
+exit: 0
+--- stdout
+{"checks":[{"detail":"pixel-cli 0.2.3 matches","name":"cli-version","ok":true},{"detail":"2 workspace members at their manifest version","name":"cargo-lock","ok":true},{"detail":"## [0.2.3] present, Unreleased empty","name":"changelog","ok":true},{"detail":"0 plugin manifests at 0.2.3","name":"plugin-versions","ok":true}],"ok":true,"version":"0.2.3"}
+--- stderr

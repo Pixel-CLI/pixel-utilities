@@ -1,0 +1,5 @@
+exit: 1
+--- stdout
+{"checks":[{"detail":"pixel-cli is 0.2.3, tag says 0.2.4; bump `version` in crates/pixel/Cargo.toml or tag v0.2.3","name":"cli-version","ok":false},{"detail":"2 workspace members at their manifest version","name":"cargo-lock","ok":true},{"detail":"no ## [0.2.4] heading in CHANGELOG.md","name":"changelog","ok":false},{"detail":"0 plugin manifests at 0.2.4","name":"plugin-versions","ok":true}],"ok":false,"version":"0.2.4"}
+--- stderr
+pixel: release-check failed

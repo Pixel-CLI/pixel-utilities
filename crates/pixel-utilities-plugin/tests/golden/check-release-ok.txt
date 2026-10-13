@@ -1,0 +1,9 @@
+exit: 0
+--- stdout
+release-check 0.2.3
+[ok  ] cli-version: pixel-cli 0.2.3 matches
+[ok  ] cargo-lock: 2 workspace members at their manifest version
+[ok  ] changelog: ## [0.2.3] present, Unreleased empty
+[ok  ] plugin-versions: 0 plugin manifests at 0.2.3
+release-check: all checks passed
+--- stderr

@@ -1,0 +1,4 @@
+exit: 1
+--- stdout
+--- stderr
+pixel: `not-a-version` is not a version (expected x.y.z, vx.y.z or refs/tags/vx.y.z)

@@ -1,0 +1,4 @@
+exit: 0
+--- stdout
+{"epistemics":{"basis":"web search","closed_world":false,"confidence":"unresolved","lower_bound":true},"hits":[],"marker":"unresolved","query":"JEV","snapshot":{"limit":8,"providers":[]}}
+--- stderr

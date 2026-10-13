@@ -1,0 +1,8 @@
+exit: 0
+--- stdout
+1. JEV [searxng]
+   https://example.test/jev
+   Joint Embedded Validator
+2. JEV again [searxng]
+   https://example.test/jev2
+--- stderr

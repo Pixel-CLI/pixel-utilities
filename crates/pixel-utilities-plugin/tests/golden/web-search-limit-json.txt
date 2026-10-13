@@ -1,0 +1,4 @@
+exit: 0
+--- stdout
+{"epistemics":{"basis":"web search","closed_world":false,"confidence":"complete","lower_bound":true},"hits":[{"engine":"searxng","snippet":"Joint Embedded Validator","title":"JEV","url":"https://example.test/jev"}],"marker":"complete","query":"JEV","snapshot":{"limit":1,"providers":["searxng"]}}
+--- stderr

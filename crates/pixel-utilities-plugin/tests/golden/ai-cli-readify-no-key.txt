@@ -1,0 +1,25 @@
+exit: 0
+--- stdout
+providers
+  ollama    not ready  no key
+
+selected: none — every provider failed, so nothing was rewritten
+
+agents
+  codex        not ready  via -         the provider failed or had no key in the environment
+               blocked: no provider answered
+  claude       not ready  via -         the provider failed or had no key in the environment
+               blocked: no provider answered
+  antigravity  not ready  via -         the provider failed or had no key in the environment
+               blocked: no provider answered
+  devin        not ready  via -         could not start devin: No such file or directory (os error 2)
+
+verified only
+  devin: EXTRA/.config/devin/config.json verified, never rewritten
+
+approvals: not attempted — re-run with --approve to clear each agent's own startup gate
+
+authentication: not attempted — re-run with --authenticate to clear a Claude auth wall through claude-code-auth-flow
+
+overall: not ready
+--- stderr
